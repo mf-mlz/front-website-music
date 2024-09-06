@@ -1,7 +1,9 @@
 import { Menu, X } from "lucide-react";
 import logo from "../assets/logo.jpg";
 import { navItems } from "../constants/index";
-import { useState } from "react";
+import { React, useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   /* Menú Responsive Mobile */
@@ -17,26 +19,35 @@ const Navbar = () => {
           <div className="flex items-center flex-shrink-0">
             {/* Logo */}
             <img className="h-10 w-10 mr-2" src={logo} alt="Logo" />
-            <span className="text-xl tracking-tight">Grupo Cognac</span>
+            <span className="text-xl tracking-tight hidden md:block">
+              Grupo Cognac
+            </span>
             {/* Menú */}
-            <ul className="hidden lg:flex ml-14 space-x-12">
+            <ul className="hidden lg:flex ml-14 space-x-9">
               {navItems.map((item, index) => (
-                <li key={index}>
-                  <a href={item.href}>{item.label}</a>
-                </li>
+                <Link
+                  key={index}
+                  to={item.to}
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer hover:text-yellow-600 transform hover:scale-105"
+                >
+                  {item.label}
+                </Link>
               ))}
             </ul>
           </div>
           {/* Buttons */}
-          <div className="hidden lg:flex justify-center space-x-12 items-center">
-            <a href="#" className="py-2 px-3 border rounded-md">
-              Sign In
-            </a>
+          <div className="hidden lg:flex justify-center space-x-12 items-center p-4">
             <a
-              href="#"
-              className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
+              href="https://wa.me/7712078535?text=¡Hola!%20Estoy%20interesado%20en%20conocer%20los%20paquetes%20musicales%20que%20ofrecen.%20¿Me%20pueden%20enviar%20más%20información%3F"
+              className="bg-gradient-to-r from-yellow-500 to-yellow-800 py-2 px-3 rounded-md flex items-center space-x-2 transition duration-300 ease-in-out transform hover:scale-105 group-hover:bg-gradient-to-r group-hover:from-yellow-600 group-hover:to-yellow-900"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Contactar por Whatsapp
+              <FaWhatsapp className="text-white text-xl" />{" "}
+              {/* Icono de WhatsApp */}
+              <span className="text-white">Contacto</span>
             </a>
           </div>
           {/* Responsive Menu */}
@@ -51,19 +62,28 @@ const Navbar = () => {
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
-                  <a href={item.href}>{item.label}</a>
+                  <Link
+                    key={index}
+                    to={item.to}
+                    smooth={true}
+                    duration={500}
+                    className="cursor-pointer hover:text-yellow-600"
+                  >
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
             <div className="flex space-x-6">
-              <a href="#" className="py-2 px-3 border rounded-md">
-                Sign In
-              </a>
               <a
-                href="#"
-                className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
+                href="https://wa.me/7712078535?text=¡Hola!%20Estoy%20interesado%20en%20conocer%20los%20paquetes%20musicales%20que%20ofrecen.%20¿Me%20pueden%20enviar%20más%20información%3F"
+                className="bg-gradient-to-r from-yellow-500 to-yellow-800 py-2 px-3 rounded-md flex items-center space-x-2 transition duration-300 ease-in-out transform hover:scale-105 group-hover:bg-gradient-to-r group-hover:from-yellow-600 group-hover:to-yellow-900"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Contactar por Whatsapp
+                <FaWhatsapp className="text-white text-xl" />{" "}
+                {/* Icono de WhatsApp */}
+                <span className="text-white">Contacto</span>
               </a>
             </div>
           </div>

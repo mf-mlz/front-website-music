@@ -1,178 +1,170 @@
-import { BotMessageSquare } from "lucide-react";
-import { BatteryCharging } from "lucide-react";
-import { Fingerprint } from "lucide-react";
-import { ShieldHalf } from "lucide-react";
-import { PlugZap } from "lucide-react";
-import { GlobeLock } from "lucide-react";
-
-import user1 from "../assets/profile-pictures/user1.jpg";
-import user2 from "../assets/profile-pictures/user2.jpg";
-import user3 from "../assets/profile-pictures/user3.jpg";
-import user4 from "../assets/profile-pictures/user4.jpg";
-import user5 from "../assets/profile-pictures/user5.jpg";
-import user6 from "../assets/profile-pictures/user6.jpg";
+import {
+  Theater,
+  Disc3,
+  FileMusic,
+  LibraryBig,
+  Calendar,
+  Mic,
+} from "lucide-react";
 
 export const navItems = [
-  { label: "Servicios", href: "#" },
-  { label: "Paquetes", href: "#" },
-  { label: "Videos", href: "#" },
-  { label: "Testimonios", href: "#" }
-];
-
-export const testimonials = [
-  {
-    user: "John Doe",
-    company: "Stellar Solutions",
-    image: user1,
-    text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.",
-  },
-  {
-    user: "Jane Smith",
-    company: "Blue Horizon Technologies",
-    image: user2,
-    text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
-  },
-  {
-    user: "David Johnson",
-    company: "Quantum Innovations",
-    image: user3,
-    text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.",
-  },
-  {
-    user: "Ronee Brown",
-    company: "Fusion Dynamics",
-    image: user4,
-    text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
-  },
-  {
-    user: "Michael Wilson",
-    company: "Visionary Creations",
-    image: user5,
-    text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
-  },
-  {
-    user: "Emily Davis",
-    company: "Synergy Systems",
-    image: user6,
-    text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.",
-  },
+  { label: "Inicio", to: "Hero" },
+  { label: "Historia", to: "History" },
+  { label: "Amenidades", to: "Feature" },
+  { label: "Servicios", to: "Workflow" },
+  { label: "Paquetes", to: "Services" },
+  { label: "Videos", to: "Videos" },
+  { label: "Comentarios", to: "Testimonials" },
 ];
 
 export const features = [
   {
-    icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
+    icon: <Theater />,
+    text: "Shows en Vivo",
     description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
+      "Ofrecemos un espectáculo en vivo con una puesta en escena profesional, adaptando cada actuación para hacerla única y memorable según tu evento.",
   },
   {
-    icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
+    icon: <Disc3 />,
+    text: "Experiencia Big Band",
     description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+      "Disfruta de la impresionante potencia y riqueza sonora de nuestra Big Band, perfecta para grandes eventos y celebraciones que requieren un impacto especial.",
   },
   {
-    icon: <ShieldHalf />,
-    text: "Built-in Templates",
+    icon: <FileMusic />,
+    text: "Música Actual",
     description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
+      "Desde los hits más recientes hasta los clásicos modernos, nuestro repertorio enriquece cualquier evento con música actual en español e inglés.",
   },
   {
-    icon: <BatteryCharging />,
-    text: "Real-Time Preview",
+    icon: <LibraryBig />,
+    text: "Múltiples Géneros Musicales",
     description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
+      "Nuestro repertorio abarca una amplia gama de géneros musicales, adaptándonos a tus preferencias, desde pop hasta jazz, para crear el ambiente perfecto.",
   },
   {
-    icon: <PlugZap />,
-    text: "Collaboration Tools",
+    icon: <Calendar />,
+    text: "Eventos Personalizados",
     description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
+      "Trabajamos contigo para personalizar el espectáculo según el tipo de evento y el ambiente deseado, asegurando una experiencia musical a medida.",
   },
   {
-    icon: <GlobeLock />,
-    text: "Analytics Dashboard",
+    icon: <Mic />,
+    text: "Cobertura Multilingüe",
     description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
+      "Ofrecemos música en español e inglés, garantizando que todos tus invitados se sientan incluidos y disfruten de la celebración.",
   },
 ];
 
 export const checklistItems = [
   {
-    title: "Code merge made easy",
+    title: "Iluminación Profesional",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Contamos con sistemas de luces y efectos visuales que realzan cada actuación en vivo.",
   },
   {
-    title: "Review code without worry",
+    title: "Audio de Alta Fidelidad",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Nuestro equipo de sonido garantiza una calidad impecable para que la música se escuche con claridad en cualquier espacio.",
   },
   {
-    title: "AI Assistance to reduce time",
+    title: "Interacción con el Público",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Nos destacamos por nuestra interacción dinámica con los invitados, creando momentos participativos y memorables.",
   },
   {
-    title: "Share work in minutes",
+    title: "Repertorio a la Carta",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Adaptamos nuestro repertorio en vivo según los gustos y preferencias de los invitados, asegurando una experiencia personalizada.",
   },
+];
+
+export const checklistFestivals = [
+  {
+    title: "Feria Cultural de Tulancingo 2005",
+    description:
+      "Nuestra participación en la Feria Cultural de Tulancingo en 2005 nos permitió compartir nuestra música con una audiencia diversa y entusiasta.",
+  },
+  {
+    title: "Premio a la Mejor Banda Local 2017",
+    description:
+      "En 2017, recibimos el Premio a la Mejor Banda Local en reconocimiento a nuestra destacada contribución a la música regional.",
+  },
+  {
+    title: "Teatro Municipal de Pachuca 2022",
+    description:
+      "En 2022, tuvimos el honor de actuar en el Teatro Municipal de Pachuca, un prestigioso teatro que ha sido un importante escenario para las artes escénicas.",
+  },
+  {
+    title: "Premio a la Mejor Actuación en Vivo 2021",
+    description:
+      "En 2021, ganamos el Premio a la Mejor Actuación en Vivo por nuestra sobresaliente presentación en eventos musicales locales.",
+  }
 ];
 
 export const pricingOptions = [
   {
-    title: "Free",
-    price: "$0",
+    title: "Básico",
+    price: "$10,000.00",
     features: [
-      "Private board sharing",
-      "5 Gb Storage",
-      "Web Analytics",
-      "Private Mode",
+      "2 Horas de Música en Vivo",
+      "Repertorio en Español e Inglés",
+      "Audio Profesional",
+      "Iluminación Básica",
     ],
   },
   {
-    title: "Pro",
-    price: "$10",
+    title: "Plus",
+    price: "$18,000.00",
     features: [
-      "Private board sharing",
-      "10 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
+      "3 Horas de Música en Vivo",
+      "Repertorio en Español e Inglés",
+      "Audio Profesional",
+      "Iluminación Profesional",
+      "Zanquero para animar al público",
     ],
   },
   {
-    title: "Enterprise",
-    price: "$200",
+    title: "Deluxe",
+    price: "$25,000.00",
     features: [
-      "Private board sharing",
-      "Unlimited Storage",
-      "High Performance Network",
-      "Private Mode",
+      "2 Horas de Música en Vivo",
+      "2 Horas de Big Band en Vivo",
+      "Repertorio en Español e Inglés",
+      "Audio Profesional",
+      "Iluminación Profesional + Humo",
+      "Zanquero para animar al público",
     ],
   },
 ];
 
-export const resourcesLinks = [
-  { href: "#", text: "Getting Started" },
-  { href: "#", text: "Documentation" },
-  { href: "#", text: "Tutorials" },
-  { href: "#", text: "API Reference" },
-  { href: "#", text: "Community Forums" },
+export const videosLink = [
+  "https://www.facebook.com/GrupoMusicalCognac/videos/nuestra-big-band-es-justo-lo-que-necesitas-para-tus-eventos-con-una-combinaci%C3%B3n-/852768190139395/",
 ];
 
-export const platformLinks = [
-  { href: "#", text: "Features" },
-  { href: "#", text: "Supported Devices" },
-  { href: "#", text: "System Requirements" },
-  { href: "#", text: "Downloads" },
-  { href: "#", text: "Release Notes" },
+export const urlImage = [
+  "https://scontent.fmex31-1.fna.fbcdn.net/v/t39.30808-6/457598410_998942972241940_3163110266275289291_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHBcWtBPvH-G-7FSaVL1331ACeWGHqquUcAJ5YYeqq5R5JBxkj4lGxUUHoTI4S5j59FOPkxNDI2TNXEjSmsA4o9&_nc_ohc=3vu-_QoWg-gQ7kNvgGeVtMy&_nc_ht=scontent.fmex31-1.fna&oh=00_AYDT6ViMDVqejqTYKJDyhRZBK6G0gct-nnmRGWhMHQfh2w&oe=66E006AE",
 ];
 
-export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Hackathons" },
-  { href: "#", text: "Jobs" },
+export const phrasesMusic = [
+  "La música es el lenguaje universal.",
+  "Donde las palabras fallan, la música habla.",
+  "La música es el arte más directo.",
+  "El ritmo es el latido del alma.",
+  "Sin música, la vida sería un error.",
+  "La melodía nos conecta más allá de las fronteras.",
+  "La música ilumina la oscuridad.",
+  "El silencio también es parte de la música.",
+  "La música es la banda sonora de la vida.",
+  "Cada canción cuenta una historia.",
+  "El sonido nos mueve, el ritmo nos libera.",
+  "La música transforma emociones en notas.",
+  "La música es el eco del universo.",
+  "La armonía es la paz hecha sonido.",
+  "Con una canción, el mundo cambia.",
+  "El arte del sonido es magia pura.",
+  "Un acorde puede cambiar el día.",
+  "Las canciones unen corazones.",
+  "La música crea recuerdos eternos.",
+  "En cada nota, vive una emoción.",
 ];
