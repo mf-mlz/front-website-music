@@ -58,15 +58,17 @@ const ModalForm = ({ isOpen, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white p-9 rounded-md w-11/12 md:w-1/2 lg:w-1/2 relative">
-        <button
-          onClick={onClose}
-          className="absolute top-2 right-2 text-yellow-500 hover:text-yellow-800 focus:outline-none text-2xl font-bold"
-          aria-label="Close"
-        >
-          &times;
-        </button>
+    <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    
+    <div class="bg-white p-9 rounded-md w-11/12 md:w-1/2 lg:w-1/2 max-h-[50vh] overflow-y-auto relative">
+      
+      <button
+        onClick={onClose}
+        className="absolute top-2 right-2 text-yellow-500 hover:text-yellow-800 focus:outline-none text-2xl font-bold"
+        aria-label="Close"
+      >
+        &times;
+      </button>
         <div className="text-center">
           <div className="border-b border-gray-900/10 pb-12">
             <h2 className="text-base font-semibold leading-7 text-gray-900">
