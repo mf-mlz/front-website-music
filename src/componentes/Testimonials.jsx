@@ -1,4 +1,5 @@
 import { UserCircle, Eye } from "lucide-react";
+import { FaStar } from 'react-icons/fa';
 import Modal from "./Modal";
 import React, { useState } from "react";
 
@@ -7,6 +8,20 @@ const Testimonials = ({ surveys }) => {
   const [modalInfo, setModalInfo] = useState({ isOpen: false, link: "" });
   const openModal = (link) => setModalInfo({ isOpen: true, link });
   const closeModal = () => setModalInfo({ isOpen: false, link: "" });
+
+  const viewLinkPhoto = (link) => {
+    const id = link.split("id=")[1];
+    return `https://drive.google.com/thumbnail?id=${id}`;
+  };
+
+  const checkCalification = (number) => {
+    const califications = [];
+    for (let index = 0; index < number; index++) {
+      califications.push(<FaStar key={index} />);
+    }
+  
+    return califications;
+  };
 
   return (
     <div className="mt-4 mb-28 tracking-wide">
@@ -20,7 +35,13 @@ const Testimonials = ({ surveys }) => {
             <div className="bg-neutral rounded-md p-6 text-md border border-neutral-800 font-thin flex flex-col h-full">
               <div className="flex flex-col flex-grow">
                 <div className="flex flex-col items-center mt-8">
-                  <UserCircle className="mb-4" />
+                  <img
+                    className="rounded-full h-10 w-10 mb-4 cursor-pointer"
+                    src={viewLinkPhoto(survey[6])}
+                    alt={survey[1]}
+                    onClick={() => openModal(survey[6])}
+                  ></img>
+                  <span className="flex my-1 space-x-2 text-yellow-400">{checkCalification(survey[7])}</span>
                   <div className="text-center">
                     <h6>{survey[1]}</h6>
                     <span className="text-sm font-normal italic text-neutral-500">

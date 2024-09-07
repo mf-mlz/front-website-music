@@ -33,6 +33,8 @@ const App = () => {
     try {
       const survey = await fetchComents();
       setSurvey(survey);
+      console.log(survey);
+      
     } catch (error) {
       console.error("Error fetching surveys:", error);
     }
