@@ -87,7 +87,7 @@ const ModalForm = ({ isOpen, onClose }) => {
                     className="flex items-center bg-white text-sm font-medium leading-6 text-gray-900"
                   >
                     <CircleAlert className="w-5 h-5 text-gray-900 mr-2" />{" "}
-                    Nombre Completo
+                    Nombre
                   </label>
                 </div>
                 <div className="mt-2">
