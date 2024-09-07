@@ -7,7 +7,7 @@ import History from "./componentes/History";
 import Services from "./componentes/Services";
 import Testimonials from "./componentes/Testimonials";
 import Videos from "./componentes/Videos";
-import { fetchVideos } from "./services/videoService";
+// import { fetchVideos } from "./services/videoService";
 import { fetchComents } from "./services/comentsService";
 import { ScaleLoader } from "react-spinners";
 import { phrasesMusic } from "./constants";
@@ -20,14 +20,14 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   const [phrase, setPhrase] = useState(null);
 
-  const loadVideos = async () => {
-    try {
-      const videos = await fetchVideos();
-      setVideosLink(videos);
-    } catch (error) {
-      console.error("Error fetching videos:", error);
-    }
-  };
+  // const loadVideos = async () => {
+  //   try {
+  //     const videos = await fetchVideos();
+  //     setVideosLink(videos);
+  //   } catch (error) {
+  //     console.error("Error fetching videos:", error);
+  //   }
+  // };
 
   const loadSurvey = async () => {
     try {
@@ -49,7 +49,7 @@ const App = () => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        await Promise.all([loadVideos(), loadSurvey()]);
+        await Promise.all([loadSurvey()]);
       } catch (err) {
         setError("Ocurrió un error al cargar los datos.");
       } finally {
@@ -80,6 +80,9 @@ const App = () => {
         <div id="Services">
           <Services />
         </div>
+        <div id="Videos">
+          <Videos />
+        </div>
       </div>
       {/* Spinner */}
       {loading ? (
@@ -95,9 +98,6 @@ const App = () => {
         /* Videos And Testimonials */
         <>
           <div className="max-w-[90%] mx-auto pt-20 px-6">
-            <div id="Videos">
-              <Videos videosLink={videosLink} />
-            </div>
             <div id="Testimonials">
               <Testimonials surveys={surveys} />
             </div>
@@ -107,7 +107,6 @@ const App = () => {
       <Footer />
     </>
   );
-  
 };
 
 export default App;

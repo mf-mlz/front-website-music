@@ -9,7 +9,7 @@ const Testimonials = ({ surveys }) => {
   const closeModal = () => setModalInfo({ isOpen: false, link: "" });
 
   return (
-    <div className="mt-28 mb-28 tracking-wide">
+    <div className="mt-4 mb-28 tracking-wide">
       {/* <hr className="border-t border-yellow-100 opacity-20" /> */}
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-10 lb:my-20">
         Comentarios
