@@ -14,7 +14,7 @@ const Videos = () => {
       </h2>
       <div className="flex flex-wrap justify-center gap-4">
         <video
-          className="w-1/2 sm:h-[300px] md:h-[200px] lg:h-[300px]"
+          className="w-[90%]"
           controls
         >
           <source src={video1} type="video/mp4" />
