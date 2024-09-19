@@ -60,7 +60,7 @@ const ModalForm = ({ isOpen, onClose }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
     
-    <div className="bg-white p-9 rounded-md w-11/12 md:w-1/2 lg:w-1/2 max-h-[100vh] overflow-y-auto relative">
+    <div className="bg-white p-9 rounded-md w-11/12 md:w-1/2 lg:w-1/2 max-h-[80vh] overflow-y-auto relative">
       
       <button
         onClick={onClose}
