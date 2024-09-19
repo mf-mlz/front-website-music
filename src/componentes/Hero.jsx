@@ -16,7 +16,7 @@ const Hero = () => {
   const closeModalForm = () => setModalInfoForm({ isOpen: false });
 
   return (
-    <div className="flex flex-col items-center mt-28 mb-28 lg:mt-20">
+    <div className="flex flex-col items-center mt-12 mb-28 lg:mt-20">
       <ModalForm isOpen={modalInfoForm.isOpen} onClose={closeModalForm} />
       <img className="h-40 w-40 my-5 animate-pulse" src={logo} alt="Logo" />
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
