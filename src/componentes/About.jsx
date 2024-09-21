@@ -16,7 +16,7 @@ const About = () => {
         <div className="p-2 w-full lg:w-1/2">
           <img className="opacity-65 rounded-2xl" src={aboutImg}></img>
         </div>
-        <div className="pt-12 w-full lg:w-1/2 flex items-center justify-center">
+        <div className="pt-12 w-full lg:w-1/2 flex items-center justify-center text-justify">
           {about.map((about, index) => (
             <div key={index} className="w-full max-w-[100%] mx-auto">
               <div className="flex justify-center">
