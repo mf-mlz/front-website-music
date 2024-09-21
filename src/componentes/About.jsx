@@ -16,13 +16,13 @@ const About = () => {
         <div className="p-2 w-full lg:w-1/2">
           <img className="opacity-65 rounded-2xl" src={aboutImg}></img>
         </div>
-        <div className="pt-12 w-full lg:w-1/2 flex items-center justify-center text-justify">
+        <div className="pt-12 w-full lg:w-1/2 flex items-center justify-center">
           {about.map((about, index) => (
             <div key={index} className="w-full max-w-[100%] mx-auto">
               <div className="flex justify-center">
                 <div>
                   <p
-                    className="text-lg text-center p-2 md:p-1 mb-20 text-neutral-500"
+                    className="text-lg text-center p-2 md:p-1 mb-20 text-neutral-500  text-justify"
                     dangerouslySetInnerHTML={{ __html: about.description }}
                   />
                 </div>
