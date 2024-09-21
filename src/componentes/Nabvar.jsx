@@ -40,7 +40,7 @@ const Navbar = () => {
           {/* Buttons */}
           <div className="hidden lg:flex justify-center space-x-12 items-center p-4">
             <a
-              href="https://wa.me/7712078535?text=¡Hola!%20Estoy%20interesado%20en%20conocer%20los%20paquetes%20musicales%20que%20ofrecen.%20¿Me%20pueden%20enviar%20más%20información%3F"
+              href="https://wa.me/7711244230?text=¡Hola!%20Estoy%20interesado%20en%20conocer%20los%20paquetes%20musicales%20que%20ofrecen.%20¿Me%20pueden%20enviar%20más%20información%3F"
               className="bg-gradient-to-r from-yellow-500 to-yellow-800 py-2 px-3 rounded-md flex items-center space-x-2 transition duration-300 ease-in-out transform hover:scale-105 group-hover:bg-gradient-to-r group-hover:from-yellow-600 group-hover:to-yellow-900"
               target="_blank"
               rel="noopener noreferrer"
@@ -76,7 +76,7 @@ const Navbar = () => {
             </ul>
             <div className="flex space-x-6">
               <a
-                href="https://wa.me/7712078535?text=¡Hola!%20Estoy%20interesado%20en%20conocer%20los%20paquetes%20musicales%20que%20ofrecen.%20¿Me%20pueden%20enviar%20más%20información%3F"
+                href="https://wa.me/7711244230?text=¡Hola!%20Estoy%20interesado%20en%20conocer%20los%20paquetes%20musicales%20que%20ofrecen.%20¿Me%20pueden%20enviar%20más%20información%3F"
                 className="bg-gradient-to-r from-yellow-500 to-yellow-800 py-2 px-3 rounded-md flex items-center space-x-2 transition duration-300 ease-in-out transform hover:scale-105 group-hover:bg-gradient-to-r group-hover:from-yellow-600 group-hover:to-yellow-900"
                 target="_blank"
                 rel="noopener noreferrer"

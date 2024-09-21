@@ -5,9 +5,9 @@ import Feature from "./componentes/Feature";
 import Workflow from "./componentes/Workflow";
 import History from "./componentes/History";
 import Services from "./componentes/Services";
+import About from "./componentes/About"; 
 import Testimonials from "./componentes/Testimonials";
 import Videos from "./componentes/Videos";
-// import { fetchVideos } from "./services/videoService";
 import { fetchComents } from "./services/comentsService";
 import { ScaleLoader } from "react-spinners";
 import { phrasesMusic } from "./constants";
@@ -20,14 +20,6 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   const [phrase, setPhrase] = useState(null);
 
-  // const loadVideos = async () => {
-  //   try {
-  //     const videos = await fetchVideos();
-  //     setVideosLink(videos);
-  //   } catch (error) {
-  //     console.error("Error fetching videos:", error);
-  //   }
-  // };
 
   const loadSurvey = async () => {
     try {
@@ -70,11 +62,14 @@ const App = () => {
         <div id="Hero">
           <Hero />
         </div>
-        <div id="History">
-          <History />
+        <div id="About">
+          <About />
         </div>
         <div id="Feature">
           <Feature />
+        </div>
+        <div id="History">
+          <History />
         </div>
         <div id="Workflow">
           <Workflow />

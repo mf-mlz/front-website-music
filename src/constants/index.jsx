@@ -9,12 +9,20 @@ import {
 
 export const navItems = [
   { label: "Inicio", to: "Hero" },
-  { label: "Historia", to: "History" },
+  { label: "Sobre Nosotros", to: "About" },
   { label: "Amenidades", to: "Feature" },
+  { label: "Trayectoria", to: "History" },
   { label: "Servicios", to: "Workflow" },
   { label: "Paquetes", to: "Services" },
   { label: "Videos", to: "Videos" },
   { label: "Comentarios", to: "Testimonials" },
+];
+
+export const about = [
+  {
+    description:
+      "Con <b>más de 20 años de experiencia</b>, el <b style='color:#b08603;'> Grupo Cognac </b> es el <b>grupo musical versátil</b> que necesitas para tus eventos. Originarios de <b>Pachuca</b>, llevamos nuestra música a todo <b>Hidalgo, Edo de Mex, CDMX y alrededores.</b> Nos especializamos en una <b>amplia variedad de géneros</b>, desde pop y rock hasta música tropical, adaptándonos a los gustos de tus invitados. <br></br>Nuestro objetivo es crear momentos inolvidables, garantizando diversión y buena música en bodas, fiestas y eventos corporativos. <br></br> <b style='color:#b08603;'>¡Estamos listos para llevar el ritmo a tu evento!</b>",
+  },
 ];
 
 export const features = [
@@ -99,7 +107,7 @@ export const checklistFestivals = [
     title: "Premio a la Mejor Actuación en Vivo 2021",
     description:
       "En 2021, ganamos el Premio a la Mejor Actuación en Vivo por nuestra sobresaliente presentación en eventos musicales locales.",
-  }
+  },
 ];
 
 export const pricingOptions = [

@@ -26,8 +26,8 @@ const Hero = () => {
           Cognac
         </span>
       </h1>
-      <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
-        La Versatilidad y el ritmo que tu fiesta necesita
+      <p className="mt-10 mb-5 text-lg text-center text-neutral-500 max-w-4xl italic">
+        Versatilidad y ritmo para tus eventos en <b>Hidalgo</b> y alrededores. <br></br> <b>¡La música perfecta para bodas, fiestas y celebraciones!</b>
       </p>
       <div className="flex justify-center space-x-4 my-5">
         <a
@@ -39,7 +39,7 @@ const Hero = () => {
           <span className="text-white">Solicitar Cotización</span>
         </a>
         <a
-          href="https://wa.me/7712078535?text=¡Hola!%20Estoy%20interesado%20en%20conocer%20los%20paquetes%20musicales%20que%20ofrecen.%20¿Me%20pueden%20enviar%20más%20información%3F"
+          href="https://wa.me/7711244230?text=¡Hola!%20Estoy%20interesado%20en%20conocer%20los%20paquetes%20musicales%20que%20ofrecen.%20¿Me%20pueden%20enviar%20más%20información%3F"
           className="bg-yellow-400 border border-yellow-400 py-2 px-3 rounded-md flex items-center space-x-2 text-black transition duration-300 ease-in-out hover:scale-105 hover:border-transparent hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800"
           target="_blank"
           rel="noopener noreferrer"
