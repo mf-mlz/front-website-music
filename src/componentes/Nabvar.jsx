@@ -16,21 +16,21 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
       <div className="container px-4 mx-auto relative text-sm">
         <div className="flex justify-between items-center">
-          <div className="flex items-center flex-shrink-0">
+          <div className="flex items-center flex-shrink-0"> 
             {/* Logo */}
             <img className="h-10 w-10 mr-2" src={logo} alt="Logo" />
             <span className="text-xl tracking-tight hidden md:block">
               Grupo Cognac
             </span>
             {/* Menú */}
-            <ul className="hidden lg:flex ml-14 space-x-9">
+            <ul className="hidden lg:flex ml-12 space-x-6"> 
               {navItems.map((item, index) => (
                 <Link
                   key={index}
                   to={item.to}
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer hover:text-yellow-600 transform hover:scale-105"
+                  className="text-xs cursor-pointer hover:text-yellow-600 transform hover:scale-105"
                 >
                   {item.label}
                 </Link>
