@@ -5,7 +5,7 @@ import Feature from "./componentes/Feature";
 import Workflow from "./componentes/Workflow";
 import History from "./componentes/History";
 import Services from "./componentes/Services";
-import About from "./componentes/About"; 
+import About from "./componentes/About";
 import Testimonials from "./componentes/Testimonials";
 import Videos from "./componentes/Videos";
 import { fetchComents } from "./services/comentsService";
@@ -20,13 +20,10 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   const [phrase, setPhrase] = useState(null);
 
-
   const loadSurvey = async () => {
     try {
       const survey = await fetchComents();
       setSurvey(survey);
-    
-    
     } catch (error) {
       console.error("Error fetching surveys:", error);
     }
@@ -71,11 +68,11 @@ const App = () => {
         <div id="History">
           <History />
         </div>
-        <div id="Workflow">
-          <Workflow />
-        </div>
         <div id="Services">
           <Services />
+        </div>
+        <div id="Workflow">
+          <Workflow />
         </div>
         <div id="Videos">
           <Videos />

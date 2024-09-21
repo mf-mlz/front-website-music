@@ -12,8 +12,8 @@ export const navItems = [
   { label: "Sobre Nosotros", to: "About" },
   { label: "Amenidades", to: "Feature" },
   { label: "Trayectoria", to: "History" },
-  { label: "Servicios", to: "Workflow" },
   { label: "Paquetes", to: "Services" },
+  { label: "Servicios", to: "Workflow" },
   { label: "Videos", to: "Videos" },
   { label: "Comentarios", to: "Testimonials" },
 ];
